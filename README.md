@@ -1,10 +1,9 @@
 # NeoVIM (Manual do Usuário)
-### Tópicos
+### Tópicos (Overview)
 
-- Overview
-- Getting Started
-- Editing Effectively
-- Tuning Vim
+- [Getting Started](./files/getting_started.md)
+- [Editing Effectively]()
+- [Tuning Vim]()
 
 #### Fonte:
 + [VIM User Manual](https://neovim.io/doc/user/usr_toc/#user-manual)
