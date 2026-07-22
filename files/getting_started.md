@@ -1,11 +1,11 @@
-#### Movimentação
-Movimentação no arquivo.
+#### Movimentar-se em Direção
+Movimentar-se em direções diversas.
 | Comando | Direção |
 | :---: | :---: |
-| h	| Left |
-| j	| Down |
-| k	| Up |
-| l	| Right |
+| h	| Esquerda |
+| j	| Baixo |
+| k	| Cima |
+| l	| Direita |
 
 ---
 #### Salvar e Sair
@@ -29,7 +29,7 @@ Desfazer uma ação (voltar).<br>
 Comando `u`
 
 Refaz uma ação desfeita (avançar).<br>
-Comando `Ctrl + R`
+Comando `<Ctrl>` + `R`
 
 ---
 #### Inserir
@@ -43,20 +43,57 @@ Inserir uma nova linha ABAIXO da posição do CURSOR e ativar o modo de INSERÇ�
 Comando `o`
 
 ---
-#### Repetição de Comandos
-Repetição X vezes de uma comando.<br>
+#### Repetir Comandos
+Repetir X vezes uma comando.<br>
 Comando `3dd` (Ex.: Deletar 3 linhas = `dd` + `dd` + `dd`)
 
 ---
 #### Descartar Alterações 
 Sair e descartar as alterações realizadas.<br>
-Comando `:q!`
+Comando `:q!` + `<Enter>`
 
 Recarregar e descartar as alterações realizadas.<br>
-Comando `:e!`
+Comando `:e!` + `<Enter>`
 
 ---
 #### Encontrar Ajuda
+Exibir a janela de ajuda de pesquisa genérica (documentação completa).<br>
+Comando `:help` + `<Enter>`
+
+Exibir a janela de ajuda de pesquisa para algo específico.<br>
+Comando `:help i` + `<Enter>` (Ex.: Explicação do comando `i`)
+
+Avançar (clicar) no link contido dentro da janela da ajuda de pesquisa.<br>
+Comando `<Ctrl>` + `]`
+
+Retroceder (voltar) no link contido dentro da janela da ajuda de pesquisa.<br>
+Comando `<Ctrl>` + `T`
+
+---
+#### Movimentar-se entre Palavras
+Movimentar-se entre palavras numa mesma linha.
+| Comando | Direção |
+| :---: | :--- |
+| w	| Primeiro caracter da próxima palavra. |
+| b	| Primeiro caracter da palavra anterior. |
+| e	| Último caracter da próxima palavra. |
+| ge | Último caracter da palavra anterior. |
+
+---
+#### Movimentar-se entre Parenteses, Colchetes e Chaves - (), [] e {}
+Movimentar-se entre o inicio e o fim (vice-versa) de parenteses, colchetes e chaves.<br>
+Comando `%` (sempre posicionado no item)
+
+---
+#### Movimentar-se para uma Linha Específicada
+Movimentar-se para a PRIMEIRA linha.<br>
+Comando `gg`
+
+Movimentar-se para a ÚLTIMA linha.<br>
+Comando `G`
+
+Movimentar-se para uma linha específicada.<br>
+Comando `45G` (Ex.: Ir para a linha 45)
 
 Onde parei
-https://neovim.io/doc/user/usr_02/#_finding-help
+https://neovim.io/doc/user/usr_03/#_simple-searches
