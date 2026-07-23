@@ -2,10 +2,10 @@
 Movimentar-se em direções diversas.
 | Comando | Direção |
 | :---: | :---: |
-| h	| Esquerda |
-| j	| Baixo |
-| k	| Cima |
-| l	| Direita |
+| `h` | Esquerda |
+| `j` | Baixo |
+| `k` | Cima |
+| `l` | Direita |
 
 ---
 #### Salvar e Sair
@@ -74,10 +74,18 @@ Comando `<Ctrl>` + `T`
 Movimentar-se entre palavras numa mesma linha.
 | Comando | Direção |
 | :---: | :--- |
-| w	| Primeiro caracter da próxima palavra. |
-| b	| Primeiro caracter da palavra anterior. |
-| e	| Último caracter da próxima palavra. |
-| ge | Último caracter da palavra anterior. |
+| `w` | Primeiro caracter da próxima palavra. |
+| `b` | Primeiro caracter da palavra anterior. |
+| `e` | Último caracter da próxima palavra. |
+| `ge` | Último caracter da palavra anterior. |
+
+---
+#### Movimentar-se para o Início/Final da Linha
+Movimentar-se entre o início e o final da linha.
+| Comando | Direção |
+| :---: | :--- |
+| `0` | Ir para o início da linha. |
+| `$` | Ir para o final da linha. |
 
 ---
 #### Movimentar-se entre Parenteses, Colchetes e Chaves - (), [] e {}
@@ -95,5 +103,25 @@ Comando `G`
 Movimentar-se para uma linha específicada.<br>
 Comando `45G` (Ex.: Ir para a linha 45)
 
+---
+#### Pesquisar Palavras
+Pesquisar palavras simples.
+| Comando | Exemplo | Descrição |
+| :---: | :--- | :--- |
+| `/` | `/casa` + `<Enter>` | Buscar de cima para baixo. |
+| `?` | `?casa` + `<Enter>` | Buscar de baixo para cima. |
+
+Navegar entre os resultados da pesquisa.
+| Comando | Direção |
+| :---: | :--- |
+| `n` | Próxima palavra. |
+| `N` | Palavra anterior. |
+
+Delimitar pesquisa com inicio e/ou fim de palavras.
+| Comando | Exemplo | Descrição |
+| :---: | :--- | :--- |
+| `\<` | `/\<ca` + `<Enter>` | Palavras que inicializam com CA >> CASA. |
+| `\>` | `/ca\>` + `<Enter>` | Palavras que terminam com CA >> MINHOCA. |
+
 Onde parei
-https://neovim.io/doc/user/usr_03/#_simple-searches
+https://neovim.io/doc/user/usr_04/#_changing-text
