@@ -123,5 +123,51 @@ Delimitar pesquisa com inicio e/ou fim de palavras.
 | `\<` | `/\<ca` + `<Enter>` | Palavras que inicializam com CA >> CASA. |
 | `\>` | `/ca\>` + `<Enter>` | Palavras que terminam com CA >> MINHOCA. |
 
+---
+#### Substituir Textos
+Substituir um caracter, palavra ou linha.<br>
+Comando `c` + `movimento` (Ex.: `cw` - Da posição do CURSOR até a próxima palavra)
+
+Substituir uma linha.<br>
+Comando `cc`
+
+Substituir uma caracter.<br>
+Comando `r` + `caracter` (Ex.: `rp` - Caracter da posição do CURSOR para `p`)
+
+---
+#### Modo Visual (Seleção)
+Selecionar um caracter.<br>
+Comando `v`
+
+Selecionar uma linha.<br>
+Comando `V`
+
+Selecionar um bloco de caracteres.<br>
+Comando `Ctrl` + `v`
+
+Mover-se entre as diagonais do bloco de caracteres.<br>
+Comando `o`
+
+---
+#### Mover Textos (Cortar e Colar)
+Colar um caracter deletado (`x` ou `d`) para a posição posterior ao CURSOR.<br>
+Comando `p`
+
+---
+#### Copiar Textos (Copiar e Colar)
+Copiar um caracter.<br>
+Comando `y`
+
+Copiar uma linha.<br>
+Comando `yy`
+
+Colar um caracter copiado (`y`) para a posição posterior ao CURSOR.<br>
+Comando `p`
+
+---
+#### Modo de Substituição
+Habilitar a subtituição de caracteres, alterando TODA a linha.<br>
+Comando `R`
+
 Onde parei
-https://neovim.io/doc/user/usr_04/#_changing-text
+https://neovim.io/doc/user/usr_07/#_edit-another-file
