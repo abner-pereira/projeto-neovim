@@ -165,6 +165,20 @@ Colar um caracter copiado (`y`) para a posição posterior ao CURSOR.<br>
 Comando `p`
 
 ---
+#### Clipboard (Copiar e Colar)
+Copiar utilizando o modo PRIMÁRIO ("Falso" Clipboard).<br>
+Comando `"*y`
+
+Colar utilizando o modo PRIMÁRIO ("Falso" Clipboard).<br>
+Comando `"*p`
+
+Copiar utilizando o modo CLIPBOARD ("Real" Clipboard).<br>
+Comando `"+y`
+
+Colar utilizando o modo CLIPBOARD ("Real" Clipboard).<br>
+Comando `"+p`
+
+---
 #### Modo de Substituição
 Habilitar a subtituição de caracteres, alterando TODA a linha.<br>
 Comando `R`
