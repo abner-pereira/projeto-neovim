@@ -183,5 +183,37 @@ Comando `"+p`
 Habilitar a subtituição de caracteres, alterando TODA a linha.<br>
 Comando `R`
 
+---
+#### Edição de Arquivos
+Abrir mais de um arquivo em simultâneo (COM registro de abertura + buffer).<br>
+Comando `nvim` + `arquivo_1 arquivo_2 ...` (Ex.: `nvim compras.txt boletos.txt`)
+
+Listar os arquivos abertos (COM registro de abertura).<br>
+Comando `:args` + `<Enter>`
+
+Redefinir a lista de arquivos abertos (COM registro de abertura).<br>
+Comando `:args` + `arquivo_1 arquivo_2 ...` + `<Enter>` (Ex.: `:args mercados.txt boletos.txt`)
+
+Navegar para o próximo arquivo (COM registro de abertura).<br>
+Comando `:next` + `<Enter>`
+
+Navegar para o arquivo anteriormente (COM registro de abertura).<br>
+Comando `:next` + `<Enter>`
+
+Navegar para o primeiro arquivo (COM registro de abertura).<br>
+Comando `:first` + `<Enter>`
+
+Navegar para o último arquivo (COM registro de abertura).<br>
+Comando `:last` + `<Enter>`
+
+Abrir um novo arquivo para edição (diretamente na buffer).<br>
+Comando `:edit` + `arquivo` + `<Enter>` (Ex.: `:edit compras.txt`)
+
+Salvar um arquivo.<br> 
+Comando `:write` + `<Enter>`
+
+Salvar um arquivo (Salvar como...).<br> 
+Comando `:saveas` + `arquivo` + `<Enter>` (Ex.: `:saveas verduras.txt`)
+
 Onde parei
-https://neovim.io/doc/user/usr_07/#_edit-another-file
+https://neovim.io/doc/user/usr_08/#08.1
