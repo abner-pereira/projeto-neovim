@@ -184,36 +184,45 @@ Habilitar a subtituição de caracteres, alterando TODA a linha.<br>
 Comando `R`
 
 ---
-#### Edição de Arquivos
-Abrir mais de um arquivo em simultâneo (COM registro de abertura + buffer).<br>
+#### Editar Arquivo (Padrão - Com inclusão de Registro na Buffer)
+Abrir mais de um arquivo em simultâneo.<br>
 Comando `nvim` + `arquivo_1 arquivo_2 ...` (Ex.: `nvim compras.txt boletos.txt`)
 
-Listar os arquivos abertos (COM registro de abertura).<br>
+Listar os arquivos abertos.<br>
 Comando `:args` + `<Enter>`
 
-Redefinir a lista de arquivos abertos (COM registro de abertura).<br>
+Redefinir a lista de arquivos abertos.<br>
 Comando `:args` + `arquivo_1 arquivo_2 ...` + `<Enter>` (Ex.: `:args mercados.txt boletos.txt`)
 
-Navegar para o próximo arquivo (COM registro de abertura).<br>
+Navegar para o próximo arquivo.<br>
 Comando `:next` + `<Enter>`
 
-Navegar para o arquivo anteriormente (COM registro de abertura).<br>
+Navegar para o arquivo anteriormente.<br>
 Comando `:next` + `<Enter>`
 
-Navegar para o primeiro arquivo (COM registro de abertura).<br>
+Navegar para o primeiro arquivo.<br>
 Comando `:first` + `<Enter>`
 
-Navegar para o último arquivo (COM registro de abertura).<br>
+Navegar para o último arquivo.<br>
 Comando `:last` + `<Enter>`
 
-Abrir um novo arquivo para edição (diretamente na buffer).<br>
+---
+#### Editar Arquivo (via Buffer Diretamente)
+Abrir um novo arquivo para edição.<br>
 Comando `:edit` + `arquivo` + `<Enter>` (Ex.: `:edit compras.txt`)
 
+---
+#### Salvar Arquivo
 Salvar um arquivo.<br> 
 Comando `:write` + `<Enter>`
 
 Salvar um arquivo (Salvar como...).<br> 
 Comando `:saveas` + `arquivo` + `<Enter>` (Ex.: `:saveas verduras.txt`)
+
+---
+#### Clonar Arquivo (Visualizado)
+Clonar o conteúdo do arquivo corrente visualizado para salvar num novo arquivo.<br> 
+Comando `:file` + `arquivo` + `<Enter>` (Ex.: `:file frutas.txt`)
 
 Onde parei
 https://neovim.io/doc/user/usr_08/#08.1
