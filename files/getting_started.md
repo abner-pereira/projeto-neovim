@@ -185,26 +185,15 @@ Comando `R`
 
 ---
 #### Editar Arquivo (Padrão - Com inclusão de Registro na Buffer)
-Abrir mais de um arquivo em simultâneo.<br>
-Comando `nvim` + `arquivo_1 arquivo_2 ...` (Ex.: `nvim compras.txt boletos.txt`)
-
-Listar os arquivos abertos.<br>
-Comando `:args` + `<Enter>`
-
-Redefinir a lista de arquivos abertos.<br>
-Comando `:args` + `arquivo_1 arquivo_2 ...` + `<Enter>` (Ex.: `:args mercados.txt boletos.txt`)
-
-Navegar para o próximo arquivo.<br>
-Comando `:next` + `<Enter>`
-
-Navegar para o arquivo anteriormente.<br>
-Comando `:next` + `<Enter>`
-
-Navegar para o primeiro arquivo.<br>
-Comando `:first` + `<Enter>`
-
-Navegar para o último arquivo.<br>
-Comando `:last` + `<Enter>`
+Definir, listar e navegar numa lista de arquivos abertos.
+| Comando | Descrição |
+| :---: | :--- |
+| `:args` + `arquivo_1 arquivo_2 ...` + `<Enter>` | Definir/redefinir uma lista de arquivos abertos. |
+| `:args` + `<Enter>` | Listar os arquivos abertos. |
+| `:next` + `<Enter>` | Navegar para o próximo arquivo. |
+| `:previous` + `<Enter>` | Navegar para o arquivo anteriormente. |
+| `:first` + `<Enter>` | Navegar para o primeiro arquivo. |
+| `:last` + `<Enter>` | Navegar para o último arquivo. |
 
 ---
 #### Editar Arquivo (via Buffer Diretamente)
@@ -216,7 +205,7 @@ Comando `:edit` + `arquivo` + `<Enter>` (Ex.: `:edit compras.txt`)
 Salvar um arquivo.<br> 
 Comando `:write` + `<Enter>`
 
-Salvar um arquivo (Salvar como...).<br> 
+Salvar um arquivo (Salvar como..).<br> 
 Comando `:saveas` + `arquivo` + `<Enter>` (Ex.: `:saveas verduras.txt`)
 
 ---
