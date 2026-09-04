@@ -197,6 +197,9 @@ Definir, listar e navegar numa lista de arquivos abertos.
 
 ---
 #### Editar Arquivo (via Buffer Diretamente)
+Abrir um ou mais arquivos simultâneamente para edição.<br>
+Comando `nvim` + `arquivo_1 arquivo_2 ...`
+
 Abrir um novo arquivo para edição.<br>
 Comando `:edit` + `arquivo` + `<Enter>` (Ex.: `:edit compras.txt`)
 
