@@ -1,7 +1,7 @@
 #### Movimentar-se em Direção
 Movimentar-se em direções diversas.
 | Comando | Direção |
-| :---: | :---: |
+| :---: | :--- |
 | `h` | Esquerda |
 | `j` | Baixo |
 | `k` | Cima |
@@ -187,7 +187,7 @@ Comando `R`
 #### Editar Arquivo (Padrão - Com inclusão de Registro na Buffer)
 Definir, listar e navegar numa lista de arquivos abertos.
 | Comando | Descrição |
-| :--- | :--- |
+| :---: | :--- |
 | `nvim` + `arquivo_1 arquivo_2 ...` | Abrir um ou mais arquivos simultâneamente. |
 | `:args` + `arquivo_1 arquivo_2 ...` + `<Enter>` | Definir/redefinir uma lista de arquivos abertos. |
 | `:args` + `<Enter>` | Listar os arquivos abertos. |
