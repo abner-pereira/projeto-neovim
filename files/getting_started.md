@@ -192,7 +192,7 @@ Definir, listar e navegar numa lista de arquivos abertos.
 | `:args` + `arquivo_1 arquivo_2 ...` + `<Enter>` | Definir/redefinir uma lista de arquivos abertos. |
 | `:args` + `<Enter>` | Listar os arquivos abertos. |
 | `:next` + `<Enter>` | Navegar para o próximo arquivo. |
-| `:previous` + `<Enter>` | Navegar para o arquivo anteriormente. |
+| `:previous` + `<Enter>` | Navegar para o arquivo anterior. |
 | `:first` + `<Enter>` | Navegar para o primeiro arquivo. |
 | `:last` + `<Enter>` | Navegar para o último arquivo. |
 
