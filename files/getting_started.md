@@ -29,7 +29,7 @@ Desfazer uma ação (voltar).<br>
 Comando `u`
 
 Refaz uma ação desfeita (avançar).<br>
-Comando `<Ctrl>` + `R`
+Comando `<Ctrl> R`
 
 ---
 #### Inserir
@@ -64,10 +64,10 @@ Exibir a janela de ajuda de pesquisa para algo específico.<br>
 Comando `:help i` + `<Enter>` (Ex.: Explicação do comando `i`)
 
 Avançar (clicar) no link contido dentro da janela da ajuda de pesquisa.<br>
-Comando `<Ctrl>` + `]`
+Comando `<Ctrl> ]`
 
 Retroceder (voltar) no link contido dentro da janela da ajuda de pesquisa.<br>
-Comando `<Ctrl>` + `T`
+Comando `<Ctrl> T`
 
 ---
 #### Movimentar-se entre Palavras
@@ -143,7 +143,7 @@ Selecionar uma linha.<br>
 Comando `V`
 
 Selecionar um bloco de caracteres.<br>
-Comando `Ctrl` + `v`
+Comando `<Ctrl> V`
 
 Mover-se entre as diagonais do bloco de caracteres.<br>
 Comando `o`
@@ -187,7 +187,8 @@ Comando `R`
 #### Editar Arquivo (Padrão - Com inclusão de Registro na Buffer)
 Definir, listar e navegar numa lista de arquivos abertos.
 | Comando | Descrição |
-| :---: | :--- |
+| :--- | :--- |
+| `nvim` + `arquivo_1 arquivo_2 ...` | Abrir um ou mais arquivos simultâneamente. |
 | `:args` + `arquivo_1 arquivo_2 ...` + `<Enter>` | Definir/redefinir uma lista de arquivos abertos. |
 | `:args` + `<Enter>` | Listar os arquivos abertos. |
 | `:next` + `<Enter>` | Navegar para o próximo arquivo. |
@@ -197,9 +198,6 @@ Definir, listar e navegar numa lista de arquivos abertos.
 
 ---
 #### Editar Arquivo (via Buffer Diretamente)
-Abrir um ou mais arquivos simultâneamente para edição.<br>
-Comando `nvim` + `arquivo_1 arquivo_2 ...`
-
 Abrir um novo arquivo para edição.<br>
 Comando `:edit` + `arquivo` + `<Enter>` (Ex.: `:edit compras.txt`)
 
@@ -212,9 +210,76 @@ Salvar um arquivo (Salvar como..).<br>
 Comando `:saveas` + `arquivo` + `<Enter>` (Ex.: `:saveas verduras.txt`)
 
 ---
-#### Clonar Arquivo (Visualizado)
+#### Clonar Arquivo
 Clonar o conteúdo do arquivo corrente visualizado para salvar num novo arquivo.<br> 
 Comando `:file` + `arquivo` + `<Enter>` (Ex.: `:file frutas.txt`)
 
+---
+#### Dividir Janela (Split)
+Dividir a janela horizontalmente, clonando a janela de origem.<br> 
+Comando `:split` + `<Enter>`
+
+Dividir a janela horizontalmente, abrindo um novo arquivo.<br> 
+Comando `:split` + `arquivo` + `<Enter>` (Ex.: `:split casas.txt`)
+
+Dividir a janela verticalmente, clonando a janela de origem.<br> 
+Comando `:vsplit` + `<Enter>`
+
+Dividir a janela verticalmente, abrindo um novo arquivo.<br> 
+Comando `:vsplit` + `arquivo` + `<Enter>` (Ex.: `:split apartamentos.txt`)
+
+---
+#### Mover-se entre as Janelas
+Movimentar-se entre as janelas.
+| Comando | Descrição |
+| :---: | :--- |
+| `<Ctrl> W` + `w` | Mover para a próxima janela. |
+| `<Ctrl> W` + `h` | Mover para a janela à esquerda. |
+| `<Ctrl> W` + `j` | Mover para a janela abaixo. |
+| `<Ctrl> W` + `k` | Mover para a janela acima. |
+| `<Ctrl> W` + `l` | Mover para a janela à direita. |
+
+---
+#### Mover posições das Janelas
+Movimentar as posições das janelas.
+| Comando | Descrição |
+| :---: | :--- |
+| `<Ctrl> W` + `H (Maiúsculo)` | Mover a janela para a esquerda. |
+| `<Ctrl> W` + `J (Maiúsculo)` | Mover a janela para abaixo. |
+| `<Ctrl> W` + `K (Maiúsculo)` | Mover a janela para acima. |
+| `<Ctrl> W` + `L (Maiúsculo)` | Mover a janela para a direita. |
+
+---
+#### Fechar as Janelas
+Fechar a janela corrente.<br>
+Comando `:close` + `<Enter>`
+
+Fechar todas as janelas e manter somente a corrente.<br>
+Comando `:only` + `<Enter>`
+
+---
+#### Paginas de Tabulação (Tabpages)
+Abrir um arquivo numa página de tabulação.<br>
+Comando `:tabedit` + `arquivo` + `<Enter>` (Ex.: `:tabedit carros.txt`)
+
+Listar as páginas de tabulação abertas.<br>
+Comando `:tabs`
+
+---
+#### Navegar na Tabulação de Páginas
+Navegar para a próxima página de tabulação.<br>
+Comando `gt`
+
+Navegar para a página de tabulação anterior.<br>
+Comando `gT`
+
+---
+#### Fechar a Tabulação de Páginas
+Fechar a página de tabulação corrente.<br>
+Comando `:tabclose` + `<Enter>`
+
+Fechar todas as páginas de tabulação e manter somente a corrente.<br>
+Comando `:tabonly` + `<Enter>`
+
 Onde parei
-https://neovim.io/doc/user/usr_08/#08.1
+https://neovim.io/doc/user/usr_09/#09.1
